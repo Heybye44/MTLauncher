@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Minetest Launcher</title>
+
+	<!-- <link rel="stylesheet" href="./css/materialize.min.css"> -->
+	<link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+	<script src="./js/script.js"></script>
+	
+	<div id = "nav">
+		<ul>
+			<li class = "waves-effect waves-light">Mods</li>
+			<li class = "waves-effect waves-light">Texture Packs</li>
+			<li class = "waves-effect waves-light">Sub-Games</li>
+			<li class = "breaker">	</li>
+			<li>Forums</li>
+			<li>Github</li>
+		</ul>
+	</div>
+	
+	<div id = "content">
+		<iframe src = "http://minetest.net"></iframe>
+	</div>
+	
+	<div id = "actionbar">
+		<button onclick = "launchMt()" class = "waves-effect waves-light">Play Minetest</button>
+		<button class = "waves-effect waves-light">Settings</button>
+		<button onclick = "require('nw.gui').Window.get().showDevTools()" class = " waves-light">Debug</button>
+	</div>
+	
+	
+</body>
+</html>
